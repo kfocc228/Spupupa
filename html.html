@@ -1,0 +1,332 @@
+    <!DOCTYPE html>
+<html>
+    <head>
+        <title>santekh-plus.com.ua</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                <script>
+          window.dataLayer = window.dataLayer || [];
+          (function (dataLayer) {
+            dataLayer.push({
+            name: "Володимир Ивайловский ",
+            email: "santekh.plus.001@gmail.com",
+            role: "owner",
+            user_id: "shop109791horoshopuauser61"
+            });
+            dataLayer.push({ event: 'pageview' });
+                                  })(window.dataLayer);
+        </script>
+        <script>
+            window.AUTH_TOKEN = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mzg1ODAyNzIsImxvZ2luIjoib3duZXIiLCJlbWFpbCI6InNhbnRla2gucGx1cy4wMDFAZ21haWwuY29tIiwicm9sZSI6MTIsImV4cCI6MTczODY2NjY3Mn0.RQsdAdwy88sF9Uqw98EeHdn0uCRQaCGO3CkooG6RLG8';
+            window.LANGUAGE   = 'uk';
+            window.TRANSLATION_MAP = new Map();
+                            TRANSLATION_MAP.set('ПОКАЗАТЬ ВСЕ', 'ПОКАЗАТИ ВСІ')
+                            TRANSLATION_MAP.set('Добавить', 'Додати')
+                            TRANSLATION_MAP.set('Отменить', 'Скасувати')
+                            TRANSLATION_MAP.set('Новый справочник', 'Новий довідник')
+                            TRANSLATION_MAP.set('Название', 'Назва')
+                        window._t = function (text) {
+                return TRANSLATION_MAP.get(text) ?? text;
+            }
+        </script>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-NRL3WZS4');</script>
+        <!-- End Google Tag Manager -->
+                    
+<script>
+(function (w) {
+    w.GLOBAL = {
+        SYSTEM_LANGUAGE: 3,
+        FIRST_LANGUAGE: 3,
+        DOMAIN: "santekh-plus.com.ua",
+        SITE_NAME: "Santekh-plus",
+        URI_PREFIX: "/",
+        URI_SUFFIX: "/",
+        theme: "horoshop_default",
+        currency: {"id":"1","i18n_language":"0","title":"UAH","abbr":" грн","position":"2","sortorder":"1","iso":"UAH","abbr_penny":"коп.","enabled_in_front":"1","sign":"₴"},
+        round_to: "0",
+        isGuest: true,
+        USER_ID: null,
+        open_cart_on_add: true,
+        cart_animation: false,
+        phone_mask: "+38 (099) 999-99-99",
+        use_countries: false,
+        enable_phone_mask_on_input: true,
+        marketingEvents: {"cart_creation":[function (model, eventId) {
+            try {
+                var products = model.Cart.products,
+    ids = [],
+    totalPrice = model.Cart.total.sum;
+
+for (key in products) {
+    ids.push(products[key].article + '');
+}
+
+gtag('event', 'Создание корзины', {
+    'event_category'  : 'Корзина',
+    'event_label'     : 'GLOBAL.DOMAIN',
+    'ecomm_prodid'    : ids,
+    'ecomm_pagetype'  : 'cart',
+    'ecomm_totalvalue': totalPrice
+});
+            } catch(e) {
+                console.error(e);
+            }
+        }],"cart_product_add":[function (model, eventId) {
+            try {
+                var products = model.Cart.products,
+    ids = [],
+    totalPrice = model.Cart.total.sum;
+
+for (key in products) {
+    ids.push(products[key].article + '');
+}
+
+gtag('event', 'add_to_cart', {
+    'currency': GLOBAL.currency.iso,
+    'value': totalPrice,
+    'items': [
+        {
+            'item_id': model.article + '',
+            'item_name': model.title,
+            'quantity': model.quantity * 1,
+            'price': model.price * 1
+        }
+    ],
+    'ecomm_prodid': ids,
+    'ecomm_pagetype': 'cart',
+    'ecomm_totalvalue': totalPrice
+});
+            } catch(e) {
+                console.error(e);
+            }
+        }],"cart_product_update":[],"cart_product_remove":[function (model, eventId) {
+            try {
+                var products = model.Cart.products,
+    ids = [],
+    totalPrice = model.Cart.total.sum;
+
+for (key in products) {
+    ids.push(products[key].article + '');
+}
+
+gtag('event', 'remove_from_cart', {
+    'currency': GLOBAL.currency.iso,
+    'value': totalPrice,
+    'items': [
+        {
+            'item_id': model.article + '',
+            'item_name': model.title,
+            'quantity': model.quantity * 1,
+            'price': model.price * 1
+        }
+    ],
+    'ecomm_prodid': ids,
+    'ecomm_pagetype': 'cart',
+    'ecomm_totalvalue': totalPrice
+});
+            } catch(e) {
+                console.error(e);
+            }
+        }],"quick_search":[],"checkout_success":[function (order_id, cart, name, email, phone, eventId) {
+            try {
+                var items = [],
+    products = cart.products,
+    ids = [];
+
+for (var i = 0, l = products.length; i < l; ++i) {
+    var product = products[i];
+
+    items.push({
+        'item_id': product.article,
+        'item_name': product.title + ' (артикул: ' + product.article_for_display + ')',
+        'quantity': product.quantity * 1,
+        'price': product.price * 1
+    });
+
+    ids.push(product.article);
+}
+
+gtag('event', 'purchase', {
+    'transaction_id': order_id,
+    'affiliation': GLOBAL.SITE_NAME,
+    'value': cart.total.total.sum,
+    'currency': GLOBAL.currency.iso,
+    'tax': 0,
+    'shipping': cart.delivery_price,
+    'coupon': cart.total.coupon_data.code,
+    'items': items,
+    'ecomm_prodid': ids,
+    'ecomm_pagetype': 'purchase',
+    'ecomm_totalvalue': cart.total.total.sum
+});
+            } catch(e) {
+                console.error(e);
+            }
+        }],"newsletter_subscription":[function (model, eventId) {
+            try {
+                gtag('event', 'Подписка на рассылку', {
+        'event_category': 'Рассылка',
+        'event_label'   : 'GLOBAL.DOMAIN'
+    });
+            } catch(e) {
+                console.error(e);
+            }
+        }],"callback_submit":[function (model, eventId) {
+            try {
+                gtag('event', 'Запрос обратного звонка', {
+        'event_category': 'Обратный звонок',
+        'event_label'   : 'GLOBAL.DOMAIN'
+    });
+            } catch(e) {
+                console.error(e);
+            }
+        }],"registration_success":[],"authorization_success":[],"ajax_page_view":[function (model, eventId) {
+            try {
+                gtag('config', 'AW-11157888396', {
+  'page_path': model
+});
+            } catch(e) {
+                console.error(e);
+            }
+        }],"add_to_wishlist":[]},
+        content_copy_protection: false,
+        GLOBAL_CSRF_TOKEN: '3f29274b773ca9a16adf9e0e5998e11a185d0528'
+    };
+    w.dataLayer = w.dataLayer || [];
+})(window);
+</script>
+            <script src="/globals.js/?currency=1&version=68e08d6dda047eae025122b3f1f8cd85"></script>
+                <script src="/adminLegacy/js/jquery-1.11.1.min.js?4.25.30.bs2"></script>
+        <script src="/adminLegacy/js/jquery-ui-1.11.3.js?4.25.30.bs2"></script>
+        <script src="/vendor/jquery/jquery.browser.js?4.25.30.bs2"></script>
+        <script src="/vendor/application/currency.js?4.25.30.bs2"></script>
+        <script src="/core/libs/jquery.numbermask.js?4.25.30.bs2"></script>
+        <script src="/core/libs/coloris.js?4.25.30.bs2"></script>
+        <script src="/core/libs/jquery.scrollTo-1.4.3.1-min.js?4.25.30.bs2"></script>
+        <script src="/core/libs/params.config.js?4.25.30.bs2"></script>
+        <script src="/core/libraries/ckeditor/ckeditor/ckeditor.js?4.25.30.bs2"></script>
+        <script>
+            CKEDITOR.config.customConfig = '/adminLegacy/js/ckeditor.config.js?4.25.30.bs2';
+        </script>
+        <script src="/core/libs/jquery.inputmask.min.js?4.25.30.bs2"></script>
+        <script src="/core/libs/tm/modal.js?4.25.30.bs2"></script>
+        <script src="/core/libs/jquery.tristate.min.js?4.25.30.bs2"></script>
+        <script src="/adminLegacy/js/AnalyticsHelper.js?4.25.30.bs2"></script>
+        <script src="/core/libs/cart/cart.js?4.25.30.bs2"></script>
+        <script src="/adminLegacy/js/main.js?4.25.30.bs2"></script>
+        <script src="/adminLegacy/js/lookup.js?4.25.30.bs2"></script>
+        <script src="/adminLegacy/js/project.js?4.25.30.bs2"></script>
+        <script src="/vendor/tm/tm.events.js?4.25.30.bs2"></script>
+        <script src="/frontend/themes/horoshop_default/layout/js/vendor/jquery.selectBoxIt.custom.js?4.25.30.bs2"></script>
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="/core/libs/date.js?4.25.30.bs2"></script>
+        <![endif]-->
+        
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+		<link href="/adminLegacy/extensions/assets/GraphBuilder/graphbuilder.css?4.25.30.bs2" rel="stylesheet" type="text/css">
+		<link href="/adminLegacy/css/calendar.mini.css?4.25.30.bs2" rel="stylesheet" type="text/css">
+        <link href="/adminLegacy/css/styles.v2.css?4.25.30.bs2" rel="stylesheet" type="text/css">
+        <link href="/adminLegacy/css/coloris.css?4.25.30.bs2" rel="stylesheet" type="text/css">
+        <link href="/adminLegacy/css/print.css?4.25.30.bs2" media="print" rel="stylesheet" type="text/css">
+        <link href="/adminLegacy/css/tooltip.css?4.25.30.bs2" rel="stylesheet" type="text/css">
+        <link href="/adminLegacy/css/selectboxit.css?4.25.30.bs2" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+            </head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-NRL3WZS4"
+            height="0"
+            width="0"
+            style="display:none;visibility:hidden"
+        ></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <input type="hidden" id="j-backButton">
+    <div id="modal-overlay" class="overlay"></div>
+    <div id='header'>
+        <div class='top padder' style="display: none">
+            <div class='column fl-l site-heading'>
+                                    <a class='site-icon' href="/" target="_blank" title="Перейти на сайт">
+                        <img src="/assets/favicon.ico" alt="icon">
+                    </a>
+                                <div class='site-title'>
+                    <div class='version'>
+                        horoshop v4                    </div>
+                    <a href="/" target="_blank" title="Перейти на сайт">santekh-plus.com.ua</a>
+                </div>
+            </div>
+            <!-- .column-->
+
+            <div class='menu fl-l'>
+                <div class='content'><a href='https://help.horoshop.ua/uk/?utm_source=admin&utm_medium=mainbutton&utm_campaign=head' class='fl-l help-icon' target='_blank'>?</a>
+                    <div class="clear"></div>
+                </div>
+                <!-- .content-->
+                <div class='clear'></div>
+            </div>
+            <!-- .menu-->
+
+            <div class='right-block fl-r'>
+                                <div class="usermenu">
+                    <div class="usermenu-button">
+                        Володимир Ивайловский                     </div>
+                    <div class="usermenu-dropdown">
+                        <ul class="usermenu-list">
+                                                            <li class="usermenu-list-item">
+                                    <a href="/admin/profile" title="Білінг">
+                                        <span>Білінг</span>
+                                    </a>
+                                </li>
+                                                        <li class="usermenu-list-item">
+                                <a href="/adminLegacy/logout.php" title="Вийти">
+                                    <img src="/adminLegacy/img/icon_logout.svg" width="16" height="16" alt="Вийти">
+                                    <span>Вийти</span>
+                                </a>
+                            </li>
+                            <li class="usermenu-languages">
+                                                                <span>uk</span>
+                                                            <a href="/language/SetLang/ru">ru</a>
+                                                            <a href="/language/SetLang/en">en</a>
+                                                            <a href="/language/SetLang/ro">ro</a>
+                                                            <a href="/language/SetLang/it">it</a>
+                                                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- column-->
+
+            <div class='clear'></div>
+        </div>
+        <!-- .top-->
+
+        
+        
+        </div>
+        <!-- .controls-->
+        <script>
+           $(function() {
+
+                $("#close").css("visibility","hidden");
+                $("#session-message").delay(500).slideDown(400);
+
+                setTimeout(function(){$("#close").css("visibility","visible");},1000);
+
+                setTimeout(function(){$("#close").fadeIn(200);},1100)
+
+
+            });
+            </script><div id="session-message" style="display:none;"><div class="session-message s-error">Доступ к Личному кабинету заблокирован<a class="close" href="#" onclick="$(this).parent().remove(); return false;"></a></div></div>
+
+    </div><!-- #header-->
+<div id="wrapper" class="show-after-load" style="display: none;">
+    <div id="content">
+<div class="main-container">    <div class='form-ajax-loader'></div>
+    <div id="current-handler-id" data-handler-id="0" hidden></div>

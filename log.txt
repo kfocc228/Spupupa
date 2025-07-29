@@ -1,0 +1,274 @@
+2025-05-08 16:02:39.716 | DEBUG    | account:find_csrf_token:82 - 73da1e980fcb44c820921667ed497a18f7b7679d
+2025-05-08 16:02:41.781 | DEBUG    | account:find_csrf_token:82 - 4bd5dbd52f34ea29423488280afcb863a8da284e
+2025-05-08 16:02:42.419 | ERROR    | __main__:update_shop:34 - Login failed
+2025-05-08 16:02:42.420 | INFO     | source:tqdm_sleep:46 - Sleep for 0:30:00
+2025-05-08 16:04:03.371 | DEBUG    | account:find_csrf_token:80 - 73da1e980fcb44c820921667ed497a18f7b7679d',
+        isMobile: false
+2025-05-08 16:04:03.493 | WARNING  | account:wrapper:326 - Invalid leading whitespace, reserved character(s), or returncharacter(s) in header value: "73da1e980fcb44c820921667ed497a18f7b7679d',\n        isMobile: false"
+2025-05-08 16:04:03.498 | DEBUG    | account:wrapper:327 - Traceback (most recent call last):
+  File "account.py", line 308, in wrapper
+  File "account.py", line 333, in _post_request
+  File "requests\sessions.py", line 637, in post
+  File "cloudscraper\__init__.py", line 259, in request
+  File "cloudscraper\__init__.py", line 192, in perform_request
+  File "requests\sessions.py", line 575, in request
+  File "requests\sessions.py", line 486, in prepare_request
+  File "requests\models.py", line 369, in prepare
+  File "requests\models.py", line 491, in prepare_headers
+  File "requests\utils.py", line 1040, in check_header_validity
+  File "requests\utils.py", line 1056, in _validate_header_part
+requests.exceptions.InvalidHeader: Invalid leading whitespace, reserved character(s), or returncharacter(s) in header value: "73da1e980fcb44c820921667ed497a18f7b7679d',\n        isMobile: false"
+
+2025-05-08 16:04:03.499 | WARNING  | __main__:main:95 - 'NoneType' object has no attribute 'text'
+2025-05-08 16:04:03.501 | INFO     | __main__:main:96 - Traceback (most recent call last):
+  File "main.py", line 93, in main
+  File "main.py", line 31, in update_shop
+  File "account.py", line 116, in login
+  File "account.py", line 114, in get_tokens_and_cookies_if_logged
+  File "account.py", line 96, in get_jwt_token
+AttributeError: 'NoneType' object has no attribute 'text'
+
+2025-05-08 16:04:04.255 | INFO     | source:tqdm_sleep:46 - Sleep for 0:30:00
+2025-05-09 11:10:03.028 | DEBUG    | account:find_csrf_token:82 - 73da1e980fcb44c820921667ed497a18f7b7679d
+2025-05-09 11:10:05.418 | DEBUG    | account:find_csrf_token:82 - 930a7240af62fea74d757fd8a1c682479e042a9c
+2025-05-09 11:10:05.990 | ERROR    | __main__:update_shop:34 - Login failed
+2025-05-09 11:10:05.992 | INFO     | source:tqdm_sleep:46 - Sleep for 0:30:00
+2025-05-14 11:15:07.933 | DEBUG    | account:find_csrf_token:80 - 8ad97bc3c156b1b3fa48480a2b4beffdf7c67663',
+        isMobile: false
+2025-05-14 11:15:08.089 | WARNING  | account:wrapper:326 - Invalid leading whitespace, reserved character(s), or returncharacter(s) in header value: "8ad97bc3c156b1b3fa48480a2b4beffdf7c67663',\n        isMobile: false"
+2025-05-14 11:15:08.093 | DEBUG    | account:wrapper:327 - Traceback (most recent call last):
+  File "account.py", line 308, in wrapper
+  File "account.py", line 333, in _post_request
+  File "requests\sessions.py", line 637, in post
+  File "cloudscraper\__init__.py", line 259, in request
+  File "cloudscraper\__init__.py", line 192, in perform_request
+  File "requests\sessions.py", line 575, in request
+  File "requests\sessions.py", line 486, in prepare_request
+  File "requests\models.py", line 369, in prepare
+  File "requests\models.py", line 491, in prepare_headers
+  File "requests\utils.py", line 1040, in check_header_validity
+  File "requests\utils.py", line 1056, in _validate_header_part
+requests.exceptions.InvalidHeader: Invalid leading whitespace, reserved character(s), or returncharacter(s) in header value: "8ad97bc3c156b1b3fa48480a2b4beffdf7c67663',\n        isMobile: false"
+
+2025-05-14 11:15:08.096 | WARNING  | __main__:main:95 - 'NoneType' object has no attribute 'text'
+2025-05-14 11:15:08.099 | INFO     | __main__:main:96 - Traceback (most recent call last):
+  File "main.py", line 93, in main
+  File "main.py", line 31, in update_shop
+  File "account.py", line 116, in login
+  File "account.py", line 114, in get_tokens_and_cookies_if_logged
+  File "account.py", line 96, in get_jwt_token
+AttributeError: 'NoneType' object has no attribute 'text'
+
+2025-05-14 11:15:08.602 | INFO     | source:tqdm_sleep:46 - Sleep for 0:30:00
+2025-05-14 11:15:15.746 | DEBUG    | account:find_csrf_token:82 - 8ad97bc3c156b1b3fa48480a2b4beffdf7c67663
+2025-05-14 11:15:18.007 | DEBUG    | account:find_csrf_token:82 - 8cd1056cc90d7a5b9e798c8e3c89aa3505a34313
+2025-05-14 11:15:18.534 | ERROR    | __main__:update_shop:34 - Login failed
+2025-05-14 11:15:18.536 | INFO     | source:tqdm_sleep:46 - Sleep for 0:30:00
+2025-05-19 14:33:50.148 | DEBUG    | account:find_csrf_token:80 - 6302b7846e97f717a1d742157bf55f8223f46752',
+        isMobile: false
+2025-05-19 14:33:50.243 | WARNING  | account:wrapper:326 - Invalid leading whitespace, reserved character(s), or returncharacter(s) in header value: "6302b7846e97f717a1d742157bf55f8223f46752',\n        isMobile: false"
+2025-05-19 14:33:50.245 | DEBUG    | account:wrapper:327 - Traceback (most recent call last):
+  File "account.py", line 308, in wrapper
+  File "account.py", line 333, in _post_request
+  File "requests\sessions.py", line 637, in post
+  File "cloudscraper\__init__.py", line 259, in request
+  File "cloudscraper\__init__.py", line 192, in perform_request
+  File "requests\sessions.py", line 575, in request
+  File "requests\sessions.py", line 486, in prepare_request
+  File "requests\models.py", line 369, in prepare
+  File "requests\models.py", line 491, in prepare_headers
+  File "requests\utils.py", line 1040, in check_header_validity
+  File "requests\utils.py", line 1056, in _validate_header_part
+requests.exceptions.InvalidHeader: Invalid leading whitespace, reserved character(s), or returncharacter(s) in header value: "6302b7846e97f717a1d742157bf55f8223f46752',\n        isMobile: false"
+
+2025-05-19 14:33:50.246 | WARNING  | __main__:main:95 - 'NoneType' object has no attribute 'text'
+2025-05-19 14:33:50.248 | INFO     | __main__:main:96 - Traceback (most recent call last):
+  File "main.py", line 93, in main
+  File "main.py", line 31, in update_shop
+  File "account.py", line 116, in login
+  File "account.py", line 114, in get_tokens_and_cookies_if_logged
+  File "account.py", line 96, in get_jwt_token
+AttributeError: 'NoneType' object has no attribute 'text'
+
+2025-05-19 14:33:50.759 | INFO     | source:tqdm_sleep:46 - Sleep for 0:30:00
+2025-05-19 14:33:58.630 | DEBUG    | account:find_csrf_token:82 - 6302b7846e97f717a1d742157bf55f8223f46752
+2025-05-19 14:34:00.930 | DEBUG    | account:find_csrf_token:82 - 48858865777b50980ca81b36cf43ebb1d07dc54b
+2025-05-19 14:34:01.369 | ERROR    | __main__:update_shop:34 - Login failed
+2025-05-19 14:34:01.371 | INFO     | source:tqdm_sleep:46 - Sleep for 0:30:00
+2025-06-11 11:41:37.817 | WARNING  | account:wrapper:321 - res.status_code = 401
+2025-06-11 11:41:37.820 | WARNING  | account:wrapper:326 - 
+2025-06-11 11:41:39.108 | DEBUG    | account:find_csrf_token:82 - b360bca9dc85f657cf5989ba94361c6cdbd64674
+2025-06-11 11:41:39.597 | ERROR    | __main__:update_shop:34 - Login failed
+2025-06-11 11:41:39.598 | INFO     | source:tqdm_sleep:46 - Sleep for 0:30:00
+2025-06-11 11:41:45.352 | DEBUG    | account:find_csrf_token:80 - b360bca9dc85f657cf5989ba94361c6cdbd64674',
+        isMobile: false
+2025-06-11 11:41:45.444 | WARNING  | account:wrapper:326 - Invalid leading whitespace, reserved character(s), or returncharacter(s) in header value: "b360bca9dc85f657cf5989ba94361c6cdbd64674',\n        isMobile: false"
+2025-06-11 11:41:45.446 | DEBUG    | account:wrapper:327 - Traceback (most recent call last):
+  File "account.py", line 308, in wrapper
+  File "account.py", line 333, in _post_request
+  File "requests\sessions.py", line 637, in post
+  File "cloudscraper\__init__.py", line 259, in request
+  File "cloudscraper\__init__.py", line 192, in perform_request
+  File "requests\sessions.py", line 575, in request
+  File "requests\sessions.py", line 486, in prepare_request
+  File "requests\models.py", line 369, in prepare
+  File "requests\models.py", line 491, in prepare_headers
+  File "requests\utils.py", line 1040, in check_header_validity
+  File "requests\utils.py", line 1056, in _validate_header_part
+requests.exceptions.InvalidHeader: Invalid leading whitespace, reserved character(s), or returncharacter(s) in header value: "b360bca9dc85f657cf5989ba94361c6cdbd64674',\n        isMobile: false"
+
+2025-06-11 11:41:45.447 | WARNING  | __main__:main:95 - 'NoneType' object has no attribute 'text'
+2025-06-11 11:41:45.449 | INFO     | __main__:main:96 - Traceback (most recent call last):
+  File "main.py", line 93, in main
+  File "main.py", line 31, in update_shop
+  File "account.py", line 116, in login
+  File "account.py", line 114, in get_tokens_and_cookies_if_logged
+  File "account.py", line 96, in get_jwt_token
+AttributeError: 'NoneType' object has no attribute 'text'
+
+2025-06-11 11:41:46.010 | INFO     | source:tqdm_sleep:46 - Sleep for 0:30:00
+2025-07-28 15:37:55.629 | WARNING  | account:wrapper:326 - HTTPSConnectionPool(host='santekh-plus.com.ua', port=443): Max retries exceeded with url: /adminLegacy/extensions/dashboard.php (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000025715BEDA50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')))
+2025-07-28 15:37:55.636 | DEBUG    | account:wrapper:327 - Traceback (most recent call last):
+  File "urllib3\connection.py", line 174, in _new_conn
+  File "urllib3\util\connection.py", line 95, in create_connection
+  File "urllib3\util\connection.py", line 85, in create_connection
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "urllib3\connectionpool.py", line 712, in urlopen
+  File "urllib3\connectionpool.py", line 1012, in _prepare_proxy
+  File "urllib3\connection.py", line 363, in connect
+  File "urllib3\connection.py", line 186, in _new_conn
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x0000025715BEDA50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "requests\adapters.py", line 486, in send
+  File "urllib3\connectionpool.py", line 799, in urlopen
+  File "urllib3\util\retry.py", line 592, in increment
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='santekh-plus.com.ua', port=443): Max retries exceeded with url: /adminLegacy/extensions/dashboard.php (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000025715BEDA50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "account.py", line 308, in wrapper
+  File "account.py", line 338, in _get_request
+  File "requests\sessions.py", line 602, in get
+  File "cloudscraper\__init__.py", line 259, in request
+  File "cloudscraper\__init__.py", line 192, in perform_request
+  File "requests\sessions.py", line 589, in request
+  File "requests\sessions.py", line 703, in send
+  File "requests\adapters.py", line 513, in send
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='santekh-plus.com.ua', port=443): Max retries exceeded with url: /adminLegacy/extensions/dashboard.php (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000025715BEDA50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')))
+
+2025-07-28 15:37:55.643 | WARNING  | __main__:main:95 - 'NoneType' object has no attribute 'url'
+2025-07-28 15:37:55.654 | INFO     | __main__:main:96 - Traceback (most recent call last):
+  File "main.py", line 93, in main
+  File "main.py", line 31, in update_shop
+  File "account.py", line 116, in login
+  File "account.py", line 111, in get_tokens_and_cookies_if_logged
+  File "account.py", line 86, in get_csrf_token
+AttributeError: 'NoneType' object has no attribute 'url'
+
+2025-07-28 15:37:56.187 | INFO     | source:tqdm_sleep:46 - Sleep for 0:30:00
+2025-07-28 15:38:34.869 | WARNING  | account:wrapper:329 - HTTPSConnectionPool(host='santekh-plus.com.ua', port=443): Max retries exceeded with url: /adminLegacy/extensions/dashboard.php (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001F5262BA0E0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')))
+2025-07-28 15:38:34.876 | DEBUG    | account:wrapper:330 - Traceback (most recent call last):
+  File "urllib3\connection.py", line 196, in _new_conn
+  File "urllib3\util\connection.py", line 85, in create_connection
+  File "urllib3\util\connection.py", line 73, in create_connection
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "urllib3\connectionpool.py", line 775, in urlopen
+  File "urllib3\connectionpool.py", line 1044, in _prepare_proxy
+  File "urllib3\connection.py", line 615, in connect
+  File "urllib3\connection.py", line 211, in _new_conn
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x000001F5262BA0E0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+urllib3.exceptions.ProxyError: ('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001F5262BA0E0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "requests\adapters.py", line 667, in send
+  File "urllib3\connectionpool.py", line 843, in urlopen
+  File "urllib3\util\retry.py", line 519, in increment
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='santekh-plus.com.ua', port=443): Max retries exceeded with url: /adminLegacy/extensions/dashboard.php (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001F5262BA0E0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "account.py", line 311, in wrapper
+  File "account.py", line 341, in _get_request
+  File "requests\sessions.py", line 602, in get
+  File "cloudscraper\__init__.py", line 259, in request
+  File "cloudscraper\__init__.py", line 192, in perform_request
+  File "requests\sessions.py", line 589, in request
+  File "requests\sessions.py", line 703, in send
+  File "requests\adapters.py", line 694, in send
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='santekh-plus.com.ua', port=443): Max retries exceeded with url: /adminLegacy/extensions/dashboard.php (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001F5262BA0E0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')))
+
+2025-07-28 15:38:34.881 | WARNING  | __main__:main:95 - 'NoneType' object has no attribute 'url'
+2025-07-28 15:38:34.889 | INFO     | __main__:main:96 - Traceback (most recent call last):
+  File "main.py", line 93, in main
+  File "main.py", line 31, in update_shop
+  File "account.py", line 119, in login
+  File "account.py", line 114, in get_tokens_and_cookies_if_logged
+  File "account.py", line 89, in get_csrf_token
+AttributeError: 'NoneType' object has no attribute 'url'
+
+2025-07-28 15:38:35.422 | INFO     | source:tqdm_sleep:46 - Sleep for 0:30:00
+2025-07-28 15:41:12.114 | WARNING  | account:wrapper:326 - HTTPSConnectionPool(host='santekh-plus.com.ua', port=443): Max retries exceeded with url: /adminLegacy/extensions/dashboard.php (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000226685AD9C0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')))
+2025-07-28 15:41:12.120 | DEBUG    | account:wrapper:327 - Traceback (most recent call last):
+  File "urllib3\connection.py", line 174, in _new_conn
+  File "urllib3\util\connection.py", line 95, in create_connection
+  File "urllib3\util\connection.py", line 85, in create_connection
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "urllib3\connectionpool.py", line 712, in urlopen
+  File "urllib3\connectionpool.py", line 1012, in _prepare_proxy
+  File "urllib3\connection.py", line 363, in connect
+  File "urllib3\connection.py", line 186, in _new_conn
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x00000226685AD9C0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "requests\adapters.py", line 486, in send
+  File "urllib3\connectionpool.py", line 799, in urlopen
+  File "urllib3\util\retry.py", line 592, in increment
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='santekh-plus.com.ua', port=443): Max retries exceeded with url: /adminLegacy/extensions/dashboard.php (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000226685AD9C0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "account.py", line 308, in wrapper
+  File "account.py", line 338, in _get_request
+  File "requests\sessions.py", line 602, in get
+  File "cloudscraper\__init__.py", line 259, in request
+  File "cloudscraper\__init__.py", line 192, in perform_request
+  File "requests\sessions.py", line 589, in request
+  File "requests\sessions.py", line 703, in send
+  File "requests\adapters.py", line 513, in send
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='santekh-plus.com.ua', port=443): Max retries exceeded with url: /adminLegacy/extensions/dashboard.php (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000226685AD9C0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')))
+
+2025-07-28 15:41:12.126 | WARNING  | __main__:main:95 - 'NoneType' object has no attribute 'url'
+2025-07-28 15:41:12.134 | INFO     | __main__:main:96 - Traceback (most recent call last):
+  File "main.py", line 93, in main
+  File "main.py", line 31, in update_shop
+  File "account.py", line 116, in login
+  File "account.py", line 111, in get_tokens_and_cookies_if_logged
+  File "account.py", line 86, in get_csrf_token
+AttributeError: 'NoneType' object has no attribute 'url'
+
+2025-07-28 15:41:12.689 | INFO     | source:tqdm_sleep:46 - Sleep for 0:30:00
